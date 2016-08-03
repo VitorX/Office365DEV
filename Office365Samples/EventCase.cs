@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Office365Samples
 {
-    class EventCases
+    class EventCase
     {
         public static async void GetEvents(string accessToken)
         {
