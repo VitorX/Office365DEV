@@ -10,6 +10,8 @@ namespace MicrosoftGraphSamples
     {
         static void Main(string[] args)
         {
+            string accessToken = "";
+            DriveItemCase.CreateItem(accessToken);
         }
     }
 }
