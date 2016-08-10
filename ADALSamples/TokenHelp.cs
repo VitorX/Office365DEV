@@ -8,10 +8,8 @@ namespace ADALSamples
     class TokenHelper
     {
         static string authority= "https://login.microsoftonline.com/common";
-        public static async Task<string> GetTokenByCert(string clientId, string tenant, string certThumbprint)
+        public static async Task<string> GetTokenByCert(string clientId, string tenant, string certThumbprint,string resource)
         {
-
-            string apiResourceId = "https://manage.office.com";
             string authority = $"https://login.windows.net/{tenant}";
 
             X509Certificate2 cert = CertHelper.FindCert(certThumbprint);
@@ -20,7 +18,7 @@ namespace ADALSamples
             AuthenticationResult result = null;
             try
             {
-                result = await authContext.AcquireTokenAsync(apiResourceId, certCred);
+                result = await authContext.AcquireTokenAsync(resource, certCred);
             }
             catch (Exception ex)
             {
