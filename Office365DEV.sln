@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Office365ManagementSamples"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTRequsetHelper", "RESTRequsetHelper\RESTRequsetHelper.csproj", "{3472DEFF-EBC3-4BD2-B22E-17209B575D28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADALClientV2", "ADALClientV2\ADALClientV2.csproj", "{B80CA94B-1AB2-4AF9-AEDB-5D7BB94801D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3472DEFF-EBC3-4BD2-B22E-17209B575D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3472DEFF-EBC3-4BD2-B22E-17209B575D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3472DEFF-EBC3-4BD2-B22E-17209B575D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80CA94B-1AB2-4AF9-AEDB-5D7BB94801D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80CA94B-1AB2-4AF9-AEDB-5D7BB94801D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80CA94B-1AB2-4AF9-AEDB-5D7BB94801D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80CA94B-1AB2-4AF9-AEDB-5D7BB94801D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
