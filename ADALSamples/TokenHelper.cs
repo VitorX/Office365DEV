@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ADALSamples
 {
-    class TokenHelper
+    public partial class TokenHelper
     {
         static string authority= "https://login.microsoftonline.com/common";
         public static async Task<string> GetTokenByCert(string clientId, string tenant, string certThumbprint,string resource)
@@ -64,8 +64,10 @@ namespace ADALSamples
         {
             AuthenticationContext authContext = new AuthenticationContext(authority);
             AuthenticationResult authResult= authContext.AcquireTokenAsync(resource, clientId,new Uri(redirectURL), new PlatformParameters(PromptBehavior.Auto)).Result;
-            return authResult.AccessToken;
+            return authResult.AccessToken;            
         }
+
+
     }
 
   
